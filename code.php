@@ -1,33 +1,12 @@
-<html>
-<body>
-<title>Guessing Game for Akash Singh c0f762af</title>
-<h1> Welcome to my guessing game</h1>
+<html style="user-select: auto;"><head style="user-select: auto;">
+<title style="user-select: auto;">Guessing Game for Akash Singh c0f762af</title>
+</head>
+<body style="user-select: auto;">
+<h1 style="user-select: auto;">Welcome to my guessing game</h1>
+<p style="user-select: auto;">
+Your guess is too low</p>
 
-<?php
-$correctnumber=25; 
-if(isset($_GET['guess']))
-{
-  if (is_numeric($_GET['guess'])===FALSE)
- {
-echo "Your guess is not a number";
-}
-else if ($_GET['guess']<$correctnumber)
- {
-echo "Your guess is too low";
-}
-else if ($_GET['guess']>$correctnumber)
- {
-echo "Your guess is too high";
-}
-else if ($_GET['guess']==$correctnumber)
- {
-echo "Congratulations - You are right";
-}
-}
-else
-{
-echo "Missing guess parameter <br> Your guess is too short";
-}
-?>
-</body>
-</html>
+
+  
+
+</body></html>
