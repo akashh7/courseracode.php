@@ -1,6 +1,6 @@
 <html>
 <body>
-<title>Akash Singh c0f762af</title>
+<title>Guessing Game for Akash Singh </title>
 <h1> Welcome to my guessing game</h1>
 <?php
 $correctnumber=70; 
