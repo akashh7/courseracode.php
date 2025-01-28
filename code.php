@@ -1,8 +1,16 @@
-<html style="user-select: auto;"><head style="user-select: auto;">
-<title style="user-select: auto;">Guessing Game for Charles Severance</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Game</title>
 </head>
-<body style="user-select: auto;">
-<h1 style="user-select: auto;">Welcome to my guessing game</h1>
-<p style="user-select: auto;">
-Your guess is too low</p>
-</body></html>
+<body>
+    <h1>Welcome to my guessing game</h1>
+    <form action="code.php" method="get">
+        <label for="guess">Enter your guess:</label>
+        <input type="text" name="guess" id="guess" placeholder="Enter a number" required>
+        <input type="submit" value="Submit Guess">
+    </form>
+</body>
+</html>
