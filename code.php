@@ -12,7 +12,7 @@ echo "<head>";
 echo "<meta charset='UTF-8'>";
 echo "<meta name='viewport' content='width=device-width, initial-scale=1.0'>";
 // Make sure the title includes your name and c0f762af exactly
-echo "<title>Guessing Game for $guess c0f762af</title>";  // Dynamic title with your name
+echo "<title>Guessing Game for $name c0f762af</title>";  // Dynamic title with your name
 echo "</head>";
 echo "<body>";
 
