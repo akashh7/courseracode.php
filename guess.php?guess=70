@@ -1,32 +1,44 @@
-<html>
-<body>
-<title>Guessing Game for Akash Singh </title>
-<h1> Welcome to my guessing game</h1>
 <?php
-$correctnumber=70; 
-if(isset($_GET['guess']))
-{
-  if (is_numeric($_GET['guess'])===FALSE)
- {
-echo "Your guess is not a number";
-}
-else if ($_GET['guess']<$correctnumber)
- {
-echo "Your guess is too low";
-}
-else if ($_GET['guess']>$correctnumber)
- {
-echo "Your guess is too high";
-}
-else if ($_GET['guess']==$correctnumber)
- {
-echo "Congratulations - You are right";
-}
-}
-else
-{
-echo "Missing guess parameter <br> Your guess is too short";
-}
+// Set the correct number for the guessing game
+$correctNumber = 42;
+
+// Add your name or identifier to the title
+$title = "Guessing Game - c0f762af";
 ?>
+<!DOCTYPE html>
+<html>
+<head>
+    <title><?php echo $title; ?></title>
+</head>
+<body>
+    <h1>Welcome to the Guessing Game</h1>
+    <?php
+    // Check if the 'guess' parameter is set
+    if (!isset($_GET['guess'])) {
+        echo "Missing guess parameter";
+    } else {
+        $guess = $_GET['guess'];
+
+        // Check if the guess is empty
+        if (strlen($guess) < 1) {
+            echo "Your guess is too short";
+        } 
+        // Check if the guess is numeric
+        else if (!is_numeric($guess)) {
+            echo "Your guess is not a number";
+        } 
+        // Compare the guess with the correct number
+        else {
+            $guess = (int)$guess;
+            if ($guess < $correctNumber) {
+                echo "Your guess is too low";
+            } else if ($guess > $correctNumber) {
+                echo "Your guess is too high";
+            } else {
+                echo "Congratulations - You are right";
+            }
+        }
+    }
+    ?>
 </body>
 </html>
