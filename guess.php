@@ -12,10 +12,15 @@ $title = "Guessing Game - c0f762af";
 </head>
 <body>
     <h1>Welcome to the Guessing Game</h1>
+    <form method="GET" action="">
+        <label for="guess">Enter your guess:</label>
+        <input type="text" id="guess" name="guess">
+        <button type="submit">Submit</button>
+    </form>
     <?php
     // Check if the 'guess' parameter is set
     if (!isset($_GET['guess'])) {
-        echo "Missing guess parameter";
+        echo "Please enter your guess in the form above.";
     } else {
         $guess = $_GET['guess'];
 
