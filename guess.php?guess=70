@@ -1,6 +1,6 @@
 <?php
 // Set the correct number for the guessing game
-$correctNumber = 42;
+$correctNumber = 70; // Change the correct number to 70
 
 // Add your name or identifier to the title
 $title = "Guessing Game - c0f762af";
